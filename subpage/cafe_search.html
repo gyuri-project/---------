@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페인부산</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- font -->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cafe_search.css">
+</head>
+
+<body>
+    <!-- fixed -->
+    <div class="fixed">
+        <!-- heaer -->
+        <header>
+            <a href="../index.html" class="logo">
+                <img src="../images/sub_logo.png" alt="로고">
+            </a>
+            <div class="search">
+                <input type="search" placeholder="검색어를 입력해보세요.">
+                <a href="#none">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </div>
+            <a href="./login.html" class="user">
+                <i class="fa-regular fa-user"></i>
+            </a>
+        </header>
+        <!-- ./heaer -->
+
+        <!-- mobile_search -->
+        <div class="search mobile_search">
+            <input type="search" placeholder="검색어를 입력해보세요.">
+            <a href="#none">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </a>
+        </div>
+        <!-- ./mobile_search -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="nav">
+                <li><a href="./cafe_search.html" class="active">부산카페찾기</a></li>
+                <li>｜</li>
+                <li><a href="#">부산커피소식</a></li>
+                <li>｜</li>
+                <li><a href="#">부산카페추천</a></li>
+            </ul>
+        </nav>
+        <!-- ./nav -->
+    </div>
+    <!-- ./fixed -->
+
+    <!-- contents -->
+    <div class="contents">
+
+        <!-- 카페 서치 박스 -->
+        <div class="cafe_search_box">
+            <h2>요즘 핫한 부산 카페는 어디?<br class="m_br"> <span>요즘 뜨는 부산 카페 정보 안내<img src="../images/star.png"
+                        alt="별 아이콘"></span></h2>
+            <form>
+                <input type="search" placeholder="검색어를 입력해보세요.">
+                <select>
+                    <option value="select">지역구 선택</option>
+                </select>
+                <select>
+                    <option value="option">옵션 선택</option>
+                </select>
+                <input type="submit" value="검색하기">
+            </form>
+        </div>
+
+        <!-- 지도 연동 -->
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.2701539021277!2d129.034404775762!3d35.09996447278053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e90af8798c73%3A0x4e3015aa23966ba!2z67aA7IKw64KY656Y65SU7J6Q7J247ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1726024671655!5m2!1sko!2skr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- 서치 필터 -->
+        <ul class="filter">
+            <li><a href="#">조회순</a></li>
+            <li><a href="#">리뷰순</a></li>
+            <li><a href="#">좋아요순</a></li>
+        </ul>
+
+        <!-- 서치 리스트 -->
+        <div class="list_box">
+            <div class="list">
+                <img src="../images/list_img.png" alt="카페 이미지">
+                <div class="list_text">
+                    <div class="list_icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                    <p><b>수영구 망미동</b></p>
+                    <h5>Filled Coffee Stand</h5>
+                    <p>
+                        우리의 커피가 당신의 삶에 작은 행복이길 바래요.
+                        약 7-8평의 작은 스몰 로스터리로 필터커피의 라인업은 다채로운 향미와 단막 위주의 구성이며 소량 로스팅으로 신선하고 다양한 산지별 필터커피를 제공합니다.
+                    </p>
+                    <ul>
+                        <li><i class="fa-regular fa-heart"></i> 200명의 사람들이 이 카페를 좋아해요</li>
+                        <li><i class="fa-regular fa-bookmark"></i> 156명의 사람들이 이 카페를 저장했어요</li>
+                    </ul>
+                    <p><b>WHY?</b> 가게는 작지만 커피를 내리는 현장을 직접 볼수 있어서..</p>
+                    <p class="review_more"><a href="./cafe_search_detail.html">REVIEW 153건 보러가기 <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="../images/list_img.png" alt="카페 이미지">
+                <div class="list_text">
+                    <div class="list_icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                    <p><b>수영구 망미동</b></p>
+                    <h5>Filled Coffee Stand</h5>
+                    <p>
+                        우리의 커피가 당신의 삶에 작은 행복이길 바래요.
+                        약 7-8평의 작은 스몰 로스터리로 필터커피의 라인업은 다채로운 향미와 단막 위주의 구성이며 소량 로스팅으로 신선하고 다양한 산지별 필터커피를 제공합니다.
+                    </p>
+                    <ul>
+                        <li><i class="fa-regular fa-heart"></i> 200명의 사람들이 이 카페를 좋아해요</li>
+                        <li><i class="fa-regular fa-bookmark"></i> 156명의 사람들이 이 카페를 저장했어요</li>
+                    </ul>
+                    <p><b>WHY?</b> 가게는 작지만 커피를 내리는 현장을 직접 볼수 있어서..</p>
+                    <p class="review_more"><a href="./cafe_search_detail.html">REVIEW 153건 보러가기 <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="../images/list_img.png" alt="카페 이미지">
+                <div class="list_text">
+                    <div class="list_icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                    <p><b>수영구 망미동</b></p>
+                    <h5>Filled Coffee Stand</h5>
+                    <p>
+                        우리의 커피가 당신의 삶에 작은 행복이길 바래요.
+                        약 7-8평의 작은 스몰 로스터리로 필터커피의 라인업은 다채로운 향미와 단막 위주의 구성이며 소량 로스팅으로 신선하고 다양한 산지별 필터커피를 제공합니다.
+                    </p>
+                    <ul>
+                        <li><i class="fa-regular fa-heart"></i> 200명의 사람들이 이 카페를 좋아해요</li>
+                        <li><i class="fa-regular fa-bookmark"></i> 156명의 사람들이 이 카페를 저장했어요</li>
+                    </ul>
+                    <p><b>WHY?</b> 가게는 작지만 커피를 내리는 현장을 직접 볼수 있어서..</p>
+                    <p class="review_more"><a href="./cafe_search_detail.html">REVIEW 153건 보러가기 <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="../images/list_img.png" alt="카페 이미지">
+                <div class="list_text">
+                    <div class="list_icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                    <p><b>수영구 망미동</b></p>
+                    <h5>Filled Coffee Stand</h5>
+                    <p>
+                        우리의 커피가 당신의 삶에 작은 행복이길 바래요.
+                        약 7-8평의 작은 스몰 로스터리로 필터커피의 라인업은 다채로운 향미와 단막 위주의 구성이며 소량 로스팅으로 신선하고 다양한 산지별 필터커피를 제공합니다.
+                    </p>
+                    <ul>
+                        <li><i class="fa-regular fa-heart"></i> 200명의 사람들이 이 카페를 좋아해요</li>
+                        <li><i class="fa-regular fa-bookmark"></i> 156명의 사람들이 이 카페를 저장했어요</li>
+                    </ul>
+                    <p><b>WHY?</b> 가게는 작지만 커피를 내리는 현장을 직접 볼수 있어서..</p>
+                    <p class="review_more"><a href="./cafe_search_detail.html">REVIEW 153건 보러가기 <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="../images/list_img.png" alt="카페 이미지">
+                <div class="list_text">
+                    <div class="list_icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                    <p><b>수영구 망미동</b></p>
+                    <h5>Filled Coffee Stand</h5>
+                    <p>
+                        우리의 커피가 당신의 삶에 작은 행복이길 바래요.
+                        약 7-8평의 작은 스몰 로스터리로 필터커피의 라인업은 다채로운 향미와 단막 위주의 구성이며 소량 로스팅으로 신선하고 다양한 산지별 필터커피를 제공합니다.
+                    </p>
+                    <ul>
+                        <li><i class="fa-regular fa-heart"></i> 200명의 사람들이 이 카페를 좋아해요</li>
+                        <li><i class="fa-regular fa-bookmark"></i> 156명의 사람들이 이 카페를 저장했어요</li>
+                    </ul>
+                    <p><b>WHY?</b> 가게는 작지만 커피를 내리는 현장을 직접 볼수 있어서..</p>
+                    <p class="review_more"><a href="./cafe_search_detail.html">REVIEW 153건 보러가기 <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <img src="../images/list_img.png" alt="카페 이미지">
+                <div class="list_text">
+                    <div class="list_icon">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                    </div>
+                    <p><b>수영구 망미동</b></p>
+                    <h5>Filled Coffee Stand</h5>
+                    <p>
+                        우리의 커피가 당신의 삶에 작은 행복이길 바래요.
+                        약 7-8평의 작은 스몰 로스터리로 필터커피의 라인업은 다채로운 향미와 단막 위주의 구성이며 소량 로스팅으로 신선하고 다양한 산지별 필터커피를 제공합니다.
+                    </p>
+                    <ul>
+                        <li><i class="fa-regular fa-heart"></i> 200명의 사람들이 이 카페를 좋아해요</li>
+                        <li><i class="fa-regular fa-bookmark"></i> 156명의 사람들이 이 카페를 저장했어요</li>
+                    </ul>
+                    <p><b>WHY?</b> 가게는 작지만 커피를 내리는 현장을 직접 볼수 있어서..</p>
+                    <p class="review_more"><a href="./cafe_search_detail.html">REVIEW 153건 보러가기 <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 더보기 -->
+        <p class="more"><a href="#">더보기</a></p>
+    </div>
+    <!-- ./contents -->
+
+
+
+    <!-- footer -->
+    <footer>
+        <ul class="f_link">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li>｜</li>
+            <li><a href="#">이용약관</a></li>
+            <li>｜</li>
+            <li><a href="#">위치기반서비스 이용약관</a></li>
+        </ul>
+        <ul>
+            <li>카페인부산(주)</li>
+            <li>대표자 백민정</li>
+            <li>부산 중구 중앙대로 26 10층</li>
+            <li>사업자등록번호 : 0000-000-0000</li>
+        </ul>
+        <p>Copyright Ⓒ 2024 CafeinBusan</p>
+    </footer>
+    <!-- ./footer -->
+
+    <!-- instagram -->
+    <a href="#none" class="instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <!-- ./instagram -->
+
+</body>
+
+</html>
