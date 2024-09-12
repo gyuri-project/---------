@@ -266,7 +266,7 @@ footer ul {
 
 @media (max-width:999px) {
     header{
-        padding: 15px 2.5%;
+        padding: 15px 2.5% 20px;
     }
     header .logo {
         width: 70px;
