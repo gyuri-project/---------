@@ -1,5 +1,5 @@
 var swiper = new Swiper(".thumbnail_slide", {
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 10,
 
     breakpoints: {
