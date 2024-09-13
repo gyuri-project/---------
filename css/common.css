@@ -5,6 +5,8 @@
     --color-black: #333;
     --color-white: #fff;
     --color-light-gray: #F9F9F9;
+    --color-mid-gray: #ccc;
+    --color-dark-gray: #666;
     --color-dark-gray: #666;
     --color-dark-blue: #465073;
     --color-blue: #46B0B4;
@@ -49,12 +51,10 @@ h2 {
 h1 {
     font-size: var(--size-h1);
     text-align: center;
-    font-weight: 500;
 }
 
 h2 {
     font-size: var(--size-h2);
-    font-weight: 500;
 }
 
 h5 {
@@ -193,7 +193,7 @@ nav {
 /* contnets */
 .contents {
     width: 1320px;
-    margin: 170px auto 100px;
+    margin: 200px auto 100px;
 }
 
 /* more */

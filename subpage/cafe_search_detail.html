@@ -14,6 +14,9 @@
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
 
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/cafe_search_detail.css">
@@ -63,14 +66,30 @@
     <!-- contents -->
     <div class="contents">
 
-        <!-- 카페 설명 -->
+        <!-- 카페 소개 -->
         <h1>연경재</h1>
         <h6>중앙동 고즈넉한 스페셜티 카페</h6>
         <ul class="date">
             <li>2024-08-27</li>
-            <li><a href="#">목록</a></li>
+            <li><a href="./cafe_search.html">목록</a></li>
         </ul>
         <img src="../images/detail.png" alt="카페 사진" class="thumbnail">
+
+        <!-- Swiper -->
+        <div class="swiper thumbnail_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/detail_img1.png" alt="1"></div>
+                <div class="swiper-slide"><img src="../images/detail_img2.png" alt="2"></div>
+                <div class="swiper-slide"><img src="../images/detail_img3.png" alt="3"></div>
+                <div class="swiper-slide"><img src="../images/detail_img4.png" alt="4"></div>
+                <div class="swiper-slide"><img src="../images/detail_img5.png" alt="5"></div>
+                <div class="swiper-slide"><img src="../images/detail_img6.png" alt="6"></div>
+                <div class="swiper-slide"><img src="../images/detail_img7.png" alt="7"></div>
+                <div class="swiper-slide"><img src="../images/detail_img8.png" alt="8"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
         <ul class="icon">
             <li>
                 <a href="#"><i class="fa-regular fa-heart"></i></a>
@@ -79,9 +98,9 @@
             <li><a href="#"><i class="fa-regular fa-share-from-square"></i> 공유</a></li>
         </ul>
 
-        <!-- 세부정보 -->
+        <!-- 세부 설명 -->
         <h2>세부정보</h2>
-        <p>
+        <p class="detail_text">
             비교적 한적한 분위기의 중앙동 골목에 빨간 벽돌로 눈에 띄는 건물이 바로 연경재입니다. 마치 한옥에 들어온 듯한 느낌을 주는 인테리어와 자연적인 오브제로 꾸며진 공간이 독특하면서도 편안한
             분위기입니다. 2층, 3층 매장의 통창으로 들어오는 채광이 좋아서 남포동 거리처럼 북적이는 일상에서 잠시 벗어나 휴식의 시간이 필요할 때 머물면 제격인 카페입니다. 자체 블랜딩한 원두로 내린
             핸드드립과 심볼인 달항아리를 이용한 디저트로 유명하고, 티 메뉴의 선택지가 넓어 다양하게 즐길 수 있습니다. 디카페인 원두는 약간의 산미가 있으면서 뒷맛이 깔끔한 편이라 라떼와 잘 어울립니다.
@@ -93,7 +112,8 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <ul class="detail_text">
+        <!-- 세부 정보 -->
+        <ul class="detail_info">
             <li>구</li>
             <li>중구</li>
             <li>동</li>
@@ -137,16 +157,63 @@
             <li>#남포동카페</li>
         </ul>
 
+        <!-- 리뷰 -->
         <h2>리뷰톡</h2>
-        <div class="rewiew">
+        <div class="review">
             <textarea placeholder="로그인 후 소중한 리뷰를 남겨주세요"></textarea>
-            <div class="rewiew_icon">
-                <i class="fa-solid fa-camera"></i>
+            <div class="review_icon">
+                <a href="#"><i class="fa-solid fa-camera"></i></a>
                 <a href="./login.html">로그인</a>
             </div>
         </div>
 
-
+        <table class="review_text">
+            <tr>
+                <th>
+                    <img src="../images/review_icon.png" alt="리뷰 아이콘">
+                </th>
+                <th>
+                    <b>이*성</b><br>
+                    <span>
+                        2024/09/09 <br class="m_br">
+                        08:32:30
+                    </span>
+                </th>
+                <td>
+                    남포동 카페 찾아다니다가 연경재로 픽! 음료랑 디저트값이 조금 비싸긴 한데, 부드럽고 산미 있는 커피, 고소하고 묵직한 커피 둘 다 맛있더라구요! 엄마가 인정한 커피 맛! 디저트는 대표 디저트 중 하나인 달항아리를 먹어보려다가 요즘 핫한 크루키를 엄마한테 알려주고 싶어서 크루 키로 결정! 내부에 엘리베이터도 있어서 이동도 간편하고, 2-3층 모두 좌석 많아요. 
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <img src="../images/review_icon.png" alt="리뷰 아이콘">
+                </th>
+                <th>
+                    <b>이*성</b><br>
+                    <span>
+                        2024/09/09 <br class="m_br">
+                        08:32:30
+                    </span>
+                </th>
+                <td>
+                    남포동 카페 찾아다니다가 연경재로 픽! 음료랑 디저트값이 조금 비싸긴 한데, 부드럽고 산미 있는 커피, 고소하고 묵직한 커피 둘 다 맛있더라구요! 엄마가 인정한 커피 맛! 디저트는 대표 디저트 중 하나인 달항아리를 먹어보려다가 요즘 핫한 크루키를 엄마한테 알려주고 싶어서 크루 키로 결정! 내부에 엘리베이터도 있어서 이동도 간편하고, 2-3층 모두 좌석 많아요. 
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <img src="../images/review_icon.png" alt="리뷰 아이콘">
+                </th>
+                <th>
+                    <b>이*성</b><br>
+                    <span>
+                        2024/09/09 <br class="m_br">
+                        08:32:30
+                    </span>
+                </th>
+                <td>
+                    남포동 카페 찾아다니다가 연경재로 픽! 음료랑 디저트값이 조금 비싸긴 한데, 부드럽고 산미 있는 커피, 고소하고 묵직한 커피 둘 다 맛있더라구요! 엄마가 인정한 커피 맛! 디저트는 대표 디저트 중 하나인 달항아리를 먹어보려다가 요즘 핫한 크루키를 엄마한테 알려주고 싶어서 크루 키로 결정! 내부에 엘리베이터도 있어서 이동도 간편하고, 2-3층 모두 좌석 많아요. 
+                </td>
+            </tr>
+        </table>
 
         <!-- 더보기 -->
         <p class="more"><a href="#">더보기</a></p>
@@ -180,6 +247,10 @@
     </a>
     <!-- ./instagram -->
 
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/cafe_search_detail.js"></script>
 </body>
 
 </html>
