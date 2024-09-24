@@ -51,22 +51,32 @@ h6 {
 
 .icon i {
     font-size: var(--size-16);
+    cursor: pointer;
+}
+
+.icon i:hover,
+.icon i.fa-solid{
+    color: var(--color-blue);
 }
 
 .icon li a:hover {
     color: var(--color-blue);
 }
 
-.icon li:nth-child(2) a {
+.icon li a {
     display: inline-block;
     background-color: #eee;
     padding: 5px 10px;
     border-radius: 100px;
 }
 
-.icon li:nth-child(2) a:hover {
+.icon li a:hover {
     background-color: var(--color-blue);
-    color: #fff;
+    color: var(--color-white);
+}
+
+.icon li a:hover i{
+    color: var(--color-white);
 }
 
 /* 세부 설명 */
@@ -188,7 +198,6 @@ h2 {
 
 .review_text th:nth-child(2) {
     width: 20%;
-    font-size: ;
 }
 
 .review_text th b {

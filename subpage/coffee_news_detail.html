@@ -55,9 +55,9 @@
         <!-- nav -->
         <nav>
             <ul class="nav">
-                <li><a href="./cafe_search.html" class="active">부산카페찾기</a></li>
+                <li><a href="./cafe_search.html">부산카페찾기</a></li>
                 <li>｜</li>
-                <li><a href="#">부산커피소식</a></li>
+                <li><a href="#" class="active">부산커피소식</a></li>
             </ul>
         </nav>
         <!-- ./nav -->
@@ -195,28 +195,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".list", {
-            spaceBetween: 30,
-            freeMode: true,
-            /* 반응형 */
-            breakpoints: {
-                300: {
-                    slidesPerView: 1.5,
-                },
-
-                500: {
-                    slidesPerView: 2.5,
-                },
-
-                1000: {
-                    slidesPerView: 4,
-                },
-            },
-        });
-    </script>
+    <script src="../js/coffee_news_detail.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,10 @@ h1 {
   transition: 0.5s;
 }
 
+.filter a:hover{
+  color: var(--color-blue);
+}
+
 /* 뉴스 리스트 */
 .list_box {
   display: flex;

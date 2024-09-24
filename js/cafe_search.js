@@ -1,7 +1,7 @@
 const heart = document.querySelector('.fa-heart');
 const mark = document.querySelector('.fa-bookmark');
 
-function icon(){
+function icon() {
     if (this.classList.contains('fa-regular')) {
         this.classList.replace('fa-regular', 'fa-solid');
     } else {

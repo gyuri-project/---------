@@ -93,10 +93,10 @@ h2 span img {
 }
 
 .list_icon {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    font-size: 20px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
 }
 
 .list_icon a:hover i {
@@ -171,6 +171,15 @@ h2 span img {
     text-align: right;
   }
 
+  .list_icon i {
+    cursor: pointer;
+  }
+
+  .list_icon i:hover,
+  .list_icon i.fa-solid {
+    color: var(--color-blue);
+  }
+
   .list_text ul {
     display: block;
   }
@@ -180,10 +189,12 @@ h2 span img {
   h2 {
     text-align: center;
   }
+
   .cafe_search_box form {
     flex-direction: column;
     gap: 10px;
   }
+
   .cafe_search_box input[type="search"],
   .cafe_search_box input[type="submit"],
   .cafe_search_box select {
@@ -195,12 +206,15 @@ h2 span img {
   .cafe_search_box {
     padding: 5%;
   }
+
   h2 {
     font-size: var(--size-h5);
   }
+
   .list_box {
     display: block;
   }
+
   .list {
     width: 100%;
     padding: 3%;
@@ -211,6 +225,7 @@ h2 span img {
   .cafe_search_box {
     padding: 5% 3%;
   }
+
   h2 {
     font-size: var(--size-h6);
   }
