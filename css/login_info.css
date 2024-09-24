@@ -20,9 +20,6 @@
     padding: 10px 5%;
     box-sizing: border-box;
 }
-.contents .none{
-    background-image: none;
-}
 .contents td p{
     margin-top: 5px;
 }
