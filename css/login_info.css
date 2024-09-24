@@ -97,14 +97,22 @@
         padding: 10px 5%;
         background-position: 10% 50%;
     }
-    
+    .contents input[type="tel"]{
+        width: 28%;
+    }
 }
 @media (max-width:500px) {
+    h2{
+        font-size: var(--size-h5);
+    }
     .m_br{
         display: block;
     }
     .contents input[type="reset"], 
     .contents input[type="submit"] {
         width: 40%;
+    }
+    .contents input[type="tel"]{
+        width: 29%;
     }
 }
