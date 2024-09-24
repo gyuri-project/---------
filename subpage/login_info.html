@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페인부산</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- font -->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login_info.css">
+</head>
+
+<body>
+    <!-- fixed -->
+    <div class="fixed">
+        <!-- heaer -->
+        <header>
+            <a href="../index.html" class="logo">
+                <img src="../images/sub_logo.png" alt="로고">
+            </a>
+            <div class="search">
+                <input type="search" placeholder="검색어를 입력해보세요.">
+                <a href="#none">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </div>
+            <a href="./login.html" class="user">
+                <i class="fa-regular fa-user"></i>
+            </a>
+        </header>
+        <!-- ./heaer -->
+
+        <!-- mobile_search -->
+        <div class="search mobile_search">
+            <input type="search" placeholder="검색어를 입력해보세요.">
+            <a href="#none">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </a>
+        </div>
+        <!-- ./mobile_search -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="nav">
+                <li><a href="./cafe_search.html">부산카페찾기</a></li>
+                <li>｜</li>
+                <li><a href="./coffee_news.html">부산커피소식</a></li>
+            </ul>
+        </nav>
+        <!-- ./nav -->
+    </div>
+    <!-- ./fixed -->
+
+    <!-- contents -->
+    <div class="contents">
+        <h2>회원정보수정</h2>
+        <form>
+            <table>
+                <tr>
+                    <th>아이디</th>
+                    <td>
+                        <input type="text" name="userId">
+                        <p>영문 소문자/숫자 포함 4~16자</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td>
+                        <input type="password" name="password">
+                        <p>영문 대소문자/숫자/특스문자 중 2가지 이상 조합 10~16자</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호<br class="m_br">확인</th>
+                    <td>
+                        <input type="password" name="passwordCheck">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td>
+                        <input type="text" name="userName">
+                    </td>
+                </tr>
+                <tr>
+                    <th>휴대전화</th>
+                    <td>
+                        <input type="tel" name="tel">
+                        - <input type="tel" name="tel">
+                        - <input type="tel" name="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="none">일반전화</th>
+                    <td>
+                        <input type="tel" name="tel">
+                        - <input type="tel" name="tel">
+                        - <input type="tel" name="tel">
+                    </td>
+                </tr>
+                <tr>
+                    <th>SMS <br class="m_br">수신여부</th>
+                    <td>
+                        <input type="radio" id="smsYes" name="sms">
+                        <label for="smsYes">수신함</label>
+                        <input type="radio" id="smsNo" name="sms">
+                        <label for="smsNo">수신안함</label>
+                        <p>다양한 혜택 및 이벤트 소식을 SMS로 받아보실수 있습니다</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일 <br class="m_br">주소</th>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일 <br class="m_br">수신여부</th>
+                    <td>
+                        <input type="radio" id="emailYes" name="emailContact">
+                        <label for="emailYes">수신함</label>
+                        <input type="radio" id="emailNo" name="emailContact">
+                        <label for="emailNo">수신안함</label>
+                        <p>다양한 혜택 및 이벤트 소식을 이메일로 받아보실수 있습니다</p>
+                    </td>
+                </tr>
+            </table>
+
+            <input type="button" value="회원탈퇴" name="secede">
+            <br>
+            <input type="reset" value="취소">
+            <input type="submit" value="회원정보수정">
+        </form>
+    </div>
+    <!-- ./contents -->
+
+
+
+    <!-- footer -->
+    <footer>
+        <ul class="f_link">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li>｜</li>
+            <li><a href="#">이용약관</a></li>
+            <li>｜</li>
+            <li><a href="#">위치기반서비스 이용약관</a></li>
+        </ul>
+        <ul>
+            <li>카페인부산(주)</li>
+            <li>대표자 백민정</li>
+            <li>부산 중구 중앙대로 26 10층</li>
+            <li>사업자등록번호 : 0000-000-0000</li>
+        </ul>
+        <p>Copyright Ⓒ 2024 CafeinBusan</p>
+    </footer>
+    <!-- ./footer -->
+
+    <!-- instagram -->
+    <a href="#none" class="instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <!-- ./instagram -->
+</body>
+
+</html>

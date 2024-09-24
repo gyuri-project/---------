@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+.contents{
+    width: 900px;
+}
+.contents table{
+    width: 100%;
+    border-top: 2px solid var(--color-black);
+    border-collapse: collapse;
+}
+.contents th,
+.contents td{
+    border-bottom: 1px solid var(--color-mid-gray);
+    padding: 10px 3%;
+    text-align: left;
+}
+.contents th{
+    background: url(../images/info.png) no-repeat 20% 50% var(--color-light-gray);
+    width: 20%;
+    padding: 10px 5%;
+    box-sizing: border-box;
+}
+.contents .none{
+    background-image: none;
+}
+.contents td p{
+    margin-top: 5px;
+}
+.contents input{
+    border: 1px solid var(--color-mid-gray);
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.contents input[type="tel"]{
+    width: 19%;
+}
+.contents input[type="radio"]{
+    display: none;
+}
+.contents label{
+    margin-right: 10px;
+}
+.contents label::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--color-black);
+    border-radius: 100%;
+    box-sizing: border-box;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.contents input:checked + label::before{
+    background: url(../images/info_check.png) no-repeat 50% 50%;
+}
+.contents input[type="button"],
+.contents input[type="reset"],
+.contents input[type="submit"]{
+    border: 1px solid var(--color-mid-gray);
+    color: var(--color-black);
+    padding: 15px 0;
+    cursor: pointer;
+}
+.contents input[type="button"]{
+    width: auto;
+    padding: 15px 20px;
+    margin: 20px 0;
+    background-color: var(--color-white);
+}
+.contents input[type="reset"],
+.contents input[type="submit"]{
+    width: 30%;
+}
+.contents input[type="reset"]{
+    background-color: var(--color-light-gray);
+}
+.contents input[type="submit"]{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-color: var(--color-blue);
+}
+.m_br{
+    display: none;
+}
+
+/* moblie */
+@media (max-width:900px) {
+    .contents{
+        width: 90%;
+    }
+    .contents th{
+        width: 30%;
+        padding: 10px 5%;
+        background-position: 10% 50%;
+    }
+    
+}
+@media (max-width:500px) {
+    .m_br{
+        display: block;
+    }
+    .contents input[type="reset"], 
+    .contents input[type="submit"] {
+        width: 40%;
+    }
+}
