@@ -93,10 +93,10 @@ h2 span img {
 }
 
 .list_icon {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 20px;
 }
 
 .list_icon a:hover i {
