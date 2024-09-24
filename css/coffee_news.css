@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+h1 {
+  padding-top: 5%;
+}
+
+/* 뉴스 필터 */
+.filter {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  font-size: var(--size-h6);
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+/* 뉴스 리스트 */
+.list_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list {
+  /* ::after */
+  position: relative;
+  width: 22%;
+  padding-bottom: 3%;
+}
+
+.list:hover{
+  text-decoration: underline;
+}
+
+.list.ongoing::after {
+  position: absolute;
+  content: "진행중";
+  top: 10px;
+  left: 10px;
+  width: 45px;
+  height: 20px;
+  color: var(--color-white);
+  text-align: center;
+  background-color: var(--color-black);
+  border-radius: 5px;
+}
+
+.list .img_box {
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  border-radius: 20px;
+}
+
+.list img {
+  width: 100%;
+}
+
+.list h6 {
+  text-align: left;
+  padding: 5px 0;
+}
+
+.list p {
+  font-size: var(--size-14);
+}
+
+/* mobile */
+@media (max-width: 999px) {
+  .filter {
+    padding-top: 50px;
+    font-size: var(--size-14);
+  }
+
+  .list {
+    width: 48%;
+  }
+
+  .list .img_box {
+    aspect-ratio: 1 / 1;
+  }
+}

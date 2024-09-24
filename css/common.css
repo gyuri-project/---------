@@ -248,6 +248,7 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .instagram .fa-instagram {
