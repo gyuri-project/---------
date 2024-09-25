@@ -59,7 +59,7 @@
   padding-top: 80px;
 }
 
-.mypage>h2 {
+.mypage > h2 {
   font-weight: 600;
   padding-bottom: 10px;
 }
@@ -106,13 +106,12 @@
   justify-content: space-between;
 }
 
-.list>h2 {
+.list > h2 {
   font-weight: bold;
 }
 
 .list .wrapper li {
   width: 24%;
-  aspect-ratio: 1/0.8;
   padding-bottom: 15px;
 }
 
@@ -121,20 +120,19 @@
   font-weight: 600;
 }
 
-.like .thum {
-  width: 100%;
-  height: 100%;
-  background: url(../images/like_thum.jpg) center center;
+.list .wrapper .img_box {
+  /* img */
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/0.8;
   border-radius: 10px;
-  margin-bottom: 8px;
 }
 
-.save .thum {
-  width: 100%;
-  height: 100%;
-  background: url(../images/save_thum.jpg) center center;
-  border-radius: 10px;
-  margin-bottom: 8px;
+.list .wrapper .img_box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .more {
@@ -184,12 +182,8 @@ td {
   font-size: var(--size-16);
 }
 
-tr>td:nth-child(2) {
+tr > td:nth-child(2) {
   text-align: left;
-}
-
-tr.hover:hover {
-  background-color: var(--color-light-gray);
 }
 
 .page_btn {
@@ -199,28 +193,6 @@ tr.hover:hover {
   gap: 15px;
   font-size: var(--size-16);
 }
-
-
-/*-------------검색창--------------*/
-#select {
-  width: 1450px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px 0 120px 0;
-}
-
-#list1,
-input {
-  padding: 3px;
-}
-
-button {
-  color: #fff;
-  padding: 4px 20px;
-  background-color: #727d47;
-  border: 1px solid #a1a1a1;
-}
-
 
 /*-------------검색창--------------*/
 
@@ -242,15 +214,14 @@ input {
 
 button {
   color: #fff;
-  padding: 4px 20px;
+  padding: 8px 20px;
   background-color: var(--color-blue);
+  border: none;
 }
 
 button a {
   color: var(--color-white);
-
 }
-
 
 /* 미디어 쿼리 */
 
@@ -271,7 +242,7 @@ button a {
     width: 100%;
   }
 
-  .mypage>h2 {
+  .mypage > h2 {
     text-align: center;
   }
 
@@ -306,7 +277,6 @@ button a {
 
   .list .wrapper li {
     width: 48%;
-
   }
 }
 
