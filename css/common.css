@@ -278,10 +278,10 @@ footer ul {
 
 @media (max-width:999px) {
     header{
-        padding: 15px 2.5% 20px;
+        padding: 10px 2.5%;
     }
     header .logo {
-        width: 70px;
+        width: 150px;
         margin: auto;
     }
 
@@ -313,7 +313,7 @@ footer ul {
     }
     .mobile_search input{
         height: auto;
-        padding: 5px 40px 5px 20px;
+        padding: 10px 40px 10px 20px;
         font-size: var(--size-14);
     }
 
