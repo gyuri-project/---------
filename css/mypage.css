@@ -17,8 +17,12 @@
 .user_box i {
   font-size: var(--size-h1);
   border-radius: 100%;
-  padding: 18px 22px;
-  border: 2px solid #333;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blue);
   margin-right: 10px;
 }
 
@@ -31,26 +35,19 @@
   padding-top: 30px;
 }
 
-.sub_menu h6 {
-  padding-bottom: 10px;
-  text-align: left;
-  font-weight: 800;
-}
-
 .sub_menu li {
   font-size: var(--size-16);
   padding-bottom: 3px;
 }
 
-/* 프로필 모바일 */
-.mobile_profile {
-  display: none;
+.sub_menu li:nth-child(1) {
   padding-bottom: 10px;
+  text-align: left;
+  font-weight: 800;
 }
 
-.user_box {
-  display: flex;
-  align-items: center;
+.sub_menu li a:hover {
+  color: var(--color-blue);
 }
 
 /* 마이페이지 */
@@ -59,7 +56,7 @@
   padding-top: 80px;
 }
 
-.mypage > h2 {
+.mypage>h2 {
   font-weight: 600;
   padding-bottom: 10px;
 }
@@ -106,7 +103,7 @@
   justify-content: space-between;
 }
 
-.list > h2 {
+.list>h2 {
   font-weight: bold;
 }
 
@@ -182,7 +179,7 @@ td {
   font-size: var(--size-16);
 }
 
-tr > td:nth-child(2) {
+tr>td:nth-child(2) {
   text-align: left;
 }
 
@@ -197,41 +194,87 @@ tr > td:nth-child(2) {
 /*-------------검색창--------------*/
 
 .search_bar {
-  margin: 0 auto;
+  display: flex;
+  gap: 5px;  
+  justify-content: center;
 }
 
-#select {
-  width: 1450px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px 0 120px 0;
+.search_bar select,
+.search_bar input,
+.search_bar button {
+  padding: 5px;
+  height: 40px;
+  box-sizing: border-box;
 }
 
-#list1,
-input {
-  padding: 3px;
+.search_bar select,
+.search_bar input {
+  border: 1px solid var(--color-mid-gray);
+  color: var(--color-black);
 }
 
-button {
+.search_bar button {
   color: #fff;
-  padding: 8px 20px;
+  padding: 5px 20px;
   background-color: var(--color-blue);
   border: none;
-}
-
-button a {
-  color: var(--color-white);
+  vertical-align: top;
+  cursor: pointer;
 }
 
 /* 미디어 쿼리 */
 
 @media (max-width: 999px) {
+  .contents {
+    display: block;
+  }
+
   .profile {
+    padding: 0;
+    position: static;
+    width: 100%;
+    position: relative;
+  }
+
+  .user_box {
+    display: flex;
+  }
+
+  h5 {
+    padding-top: 10px;
+  }
+
+  .profile ul {
+    padding: 0;
+  }
+
+  .profile ul:nth-of-type(1) {
     display: none;
   }
 
-  .mobile_profile {
-    display: block;
+  .profile ul:nth-of-type(2) {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    gap: 15px;
+  }
+
+  .profile ul:nth-of-type(2) li:nth-child(1) {
+    display: none;
+  }
+
+  .profile ul:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    left: 280px;
+  }
+
+  .profile ul li,
+  .profile ul li:nth-child(1) {
+    font-size: var(--size-16);
+    font-weight: 600;
+    padding-bottom: 10px;
   }
 
   .user_box a {
@@ -242,7 +285,7 @@ button a {
     width: 100%;
   }
 
-  .mypage > h2 {
+  .mypage>h2 {
     text-align: center;
   }
 
@@ -277,6 +320,61 @@ button a {
 
   .list .wrapper li {
     width: 48%;
+  }
+}
+
+@media (max-width: 430px) {
+  .search_bar{
+    gap: 1%;
+  }
+  .search_bar select,
+  .search_bar input,
+  .search_bar button{
+    padding: 1%;
+    font-size: var(--size-14);
+  }
+  .search_bar select{
+    width: 30%;
+  } 
+  .search_bar input{
+    width: 50%;
+  }
+  .search_bar button{
+    width: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  .user_box i {
+    font-size: var(--size-h2);
+    width: 60px;
+    height: 60px;
+  }
+
+  h5 {
+    font-size: var(--size-h6);
+    padding-top: 5px;
+  }
+
+  .profile ul:nth-of-type(2) {
+    left: 70px;
+  }
+
+  .profile ul:nth-of-type(3) {
+    left: 240px;
+  }
+
+  .profile ul li,
+  .profile ul li:nth-child(1) {
+    padding-bottom: 0;
+    font-size: var(--size-14);
+  }
+}
+
+@media (max-width: 335px) {
+  .profile ul:nth-of-type(3) {
+    bottom: -30px;
+    left: 70px;
   }
 }
 
