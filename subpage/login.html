@@ -34,7 +34,7 @@
                 </a>
             </div>
             <a href="./login.html" class="user">
-                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-user"></i>
             </a>
         </header>
         <!-- ./heaer -->
@@ -66,7 +66,10 @@
             <h2>회원 로그인</h2>
             <form>
                 <input type="text" placeholder="아이디를 입력해 주세요">
-                <input type="password" placeholder="비밀번호를 입력해 주세요">
+                <div class="password_box">
+                    <input type="password" placeholder="비밀번호를 입력해 주세요">
+                    <a href="#" class="password_icon"><img src="../images/password_icon.png" alt="비밀번호 보기/안보기"></a>
+                </div>
                 <input type="submit" value="로그인">
                 <p class="left">
                     <input type="checkbox" id="check"> <label for="check">로그인 상태 유지하기</label>
@@ -82,7 +85,7 @@
             <div class="login_more">
                 <a href="#">비밀번호찾기</a>
                 ｜
-                <a href="#">회원가입하기</a>
+                <a href="./join.html">회원가입하기</a>
             </div>
         </div>
     </div>
@@ -114,6 +117,8 @@
         <i class="fa-brands fa-instagram"></i>
     </a>
     <!-- ./instagram -->
+
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

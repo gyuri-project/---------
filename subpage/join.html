@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페인부산</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- font -->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/join.css">
+</head>
+
+<body>
+    <!-- fixed -->
+    <div class="fixed">
+        <!-- heaer -->
+        <header>
+            <a href="../index.html" class="logo">
+                <img src="../images/sub_logo.png" alt="로고">
+            </a>
+            <div class="search">
+                <input type="search" placeholder="검색어를 입력해보세요.">
+                <a href="#none">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </a>
+            </div>
+            <a href="./login.html" class="user">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </header>
+        <!-- ./heaer -->
+
+        <!-- mobile_search -->
+        <div class="search mobile_search">
+            <input type="search" placeholder="검색어를 입력해보세요.">
+            <a href="#none">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </a>
+        </div>
+        <!-- ./mobile_search -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="nav">
+                <li><a href="./cafe_search.html">부산카페찾기</a></li>
+                <li>｜</li>
+                <li><a href="./coffee_news.html">부산커피소식</a></li>
+            </ul>
+        </nav>
+        <!-- ./nav -->
+    </div>
+    <!-- ./fixed -->
+
+    <!-- contents -->
+    <div class="contents">
+        <div class="join_wrap">
+            <h2>회원가입</h2>
+            <form>
+                <label for="userId">아이디</label>
+                <input type="text" placeholder="영문소문자/숫자 포함 4~16자" id="userId">
+                <label for="password">비밀번호</label>
+                <div class="password_box">
+                    <input type="password" placeholder="영어,숫자,특수문자 포함 8~16자리" id="password">
+                    <a href="#" class="password_icon"><img src="../images/password_icon.png" alt="비밀번호 보기/안보기"></a>
+                </div>
+                <label for="userName">이름</label>
+                <input type="text" id="userName">
+                <label for="userTel">휴대전화</label>
+                <input type="tel" id="userTel">
+                - <input type="tel" name="userTel">
+                - <input type="tel" name="userTel">
+                <label for="email">이메일</label>
+                <input type="email" id="email">
+
+                <div class="left">
+                    <p>약관동의</p>
+                    <input type="checkbox" id="checkAll">
+                    <label for="checkAll">전체 동의 합니다</label>
+                    <ul class="left_wrap">
+                        <li>
+                            <input type="checkbox" id="check1">
+                            <label for="check1"><span>[필수]</span> 카페인부산 회원약관에 동의합니다.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check2">
+                            <label for="check2"><span>[필수]</span> 카페인부산 개인정보 수집 및 이용 동의</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check3">
+                            <label for="check3"><span>[선택]</span> 프로모션(광고) 정보 수신동의</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="check_sms">
+                                    <label for="check_sms">SMS 수신동의</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check_email">
+                                    <label for="check_email">이메일 수신동의</label>
+                                    <p>다양한 혜택 및 이벤트 소식을 받아보실수 있습니다</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <input type="submit" value="로그인">
+
+            </form>
+
+            <p>다른 방법으로 로그인 하기</p>
+            <ul class="account_more">
+                <li><a href="#"><img src="../images/naver.png" alt="네이버 로그인"></a></li>
+                <li><a href="#"><img src="../images/kakaotalk.png" alt="카카오톡 로그인"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ./contents -->
+
+    <!-- footer -->
+    <footer>
+        <ul class="f_link">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li>｜</li>
+            <li><a href="#">이용약관</a></li>
+            <li>｜</li>
+            <li><a href="#">위치기반서비스 이용약관</a></li>
+        </ul>
+        <ul>
+            <li>카페인부산(주)</li>
+            <li>대표자 백민정</li>
+            <li>부산 중구 중앙대로 26 10층</li>
+            <li>사업자등록번호 : 0000-000-0000</li>
+        </ul>
+        <p>Copyright Ⓒ 2024 CafeinBusan</p>
+    </footer>
+    <!-- ./footer -->
+
+    <!-- instagram -->
+    <a href="#none" class="instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <!-- ./instagram -->
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/join.js"></script>
+</body>
+
+</html>

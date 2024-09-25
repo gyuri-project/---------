@@ -12,8 +12,8 @@
 
 .index_wrap .logo {
   display: block;
-  width: 400px;
-  max-width: 400px;
+  width: 100%;
+  max-width: 301px;
   margin: auto;
 }
 

@@ -22,9 +22,22 @@ h2{
     border: 1px solid var(--color-mid-gray);
     padding: 10px;
     box-sizing: border-box;
+    color: var(--color-black);
 }
 .login_wrap input::placeholder{
     color: var(--color-mid-gray);
+}
+.password_box{
+    position: relative;
+}
+.password_icon{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    opacity: 0.5;
+}
+.password_icon.on{
+    opacity: 1;
 }
 .login_wrap input[type="submit"]{
     background-color: var(--color-blue);
@@ -75,7 +88,7 @@ h2{
 }
 
 /* moblie */
-@media (max-width:900px){
+@media (max-width:930px){
     .contents{
         width: 90%;
     }

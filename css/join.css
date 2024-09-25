@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+.contents{
+    width: 900px;
+    border: 1px solid var(--color-mid-gray);
+    padding: 50px 0;
+}
+
+.join_wrap{
+    width: 510px;
+    margin: auto;
+    font-size: var(--size-16);
+}
+h2{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contents input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-mid-gray);
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--color-black);
+}
+.contents input::placeholder{
+    color: var(--color-mid-gray);
+}
+.contents label{
+    display: block;
+    margin-bottom: 3px;
+}
+.password_box{
+    position: relative;
+}
+.password_icon{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    opacity: 0.5;
+}
+.password_icon.on{
+    opacity: 1;
+}
+.contents input[type="tel"]{
+    display: inline-block;
+    width: 31%;
+}
+.left{
+    margin-top: 30px;
+}
+.left p{
+    margin-bottom: 5px;
+}
+.left> label{
+    margin-bottom: 8px;
+}
+.left input{
+    display: none;
+}
+.left label::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--color-mid-gray);
+    box-sizing: border-box;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.left input:checked + label::before{
+    background: url(../images/check.png) no-repeat 50% 50% var(--color-blue);
+    border-color: var(--color-blue);
+}
+.left_wrap{
+    border-top: 1px solid var(--color-mid-gray);
+    padding: 10px 0 0 10px;
+    font-size: var(--size-14);
+}
+.left_wrap label{
+    margin-bottom: 5px;
+}
+.left_wrap span{
+    color: var(--color-blue);
+}
+.left_wrap ul{
+    padding-left: 25px;
+}
+.left_wrap ul p{
+    font-size: 12px;
+}
+.contents input[type="submit"]{
+    background-color: var(--color-blue);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 15px 0;
+    margin: 15px 0 30px;
+}
+.join_wrap>p{
+    text-align: center;
+}
+.account_more{
+    margin: 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* moblie */
+@media (max-width:930px){
+    .contents{
+        width: 90%;
+    }
+}
+
+@media (max-width:620px){
+    .join_wrap{
+        width: 90%;
+    }
+    .contents input[type="tel"]{
+        box-sizing: border-box;
+        width: 30%;
+    }
+}
+@media (max-width:430px){
+    h2{
+        font-size: var(--size-h5);
+    }
+}
+@media (max-width:374px){
+    .left_wrap{
+        font-size: 12px;
+    }
+    .contents input[type="tel"]{
+        width: 29%;
+    }
+}
