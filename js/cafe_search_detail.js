@@ -28,3 +28,14 @@ function icon(){
 
 heart.addEventListener('click', icon);
 mark.addEventListener('click', icon);
+
+
+$(function(){
+    $('.swiper-slide:nth-child(1)').click(function(){
+        $('.pop1').show();
+    });
+
+    $('.popup i').click(function(){
+        $('.popup').hide();
+    });
+});
