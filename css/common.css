@@ -45,6 +45,18 @@ textarea {
     font-family: var(--font-noto);
     font-size: var(--size-16);
     color: var(--color-black);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select{
+    background: url(../images/icon_select.png) no-repeat 95% 50%;
 }
 
 input:focus,
@@ -54,7 +66,7 @@ textarea:focus {
 }
 
 input::placeholder,
-textarea::placeholder{
+textarea::placeholder {
     color: var(--color-mid-gray);
 }
 
@@ -289,6 +301,10 @@ footer ul {
 }
 
 @media (max-width:999px) {
+    select{
+        background-position-x: 98%;
+    }
+
     header {
         padding: 10px 2.5%;
     }
