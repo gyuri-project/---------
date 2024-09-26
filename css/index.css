@@ -96,8 +96,3 @@ h5 {
   }
 }
 
-@media (max-width: 430px) {
-  .index_wrap {
-    padding-top: 20vh;
-  }
-}
