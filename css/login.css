@@ -1,21 +1,23 @@
 @charset "UTF-8";
 
-.contents{
+.contents {
     width: 900px;
     border: 1px solid var(--color-mid-gray);
     padding: 50px 0;
 }
 
-.login_wrap{
+.login_wrap {
     width: 510px;
     margin: auto;
     text-align: center;
     font-size: var(--size-14);
 }
-h2{
+
+h2 {
     padding-bottom: 20px;
 }
-.login_wrap input{
+
+.login_wrap input {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -24,35 +26,44 @@ h2{
     box-sizing: border-box;
     color: var(--color-black);
 }
-.login_wrap input::placeholder{
+
+.login_wrap input::placeholder {
     color: var(--color-mid-gray);
 }
-.password_box{
+
+.password_box {
     position: relative;
 }
-.password_icon{
+
+.password_icon {
     position: absolute;
     top: 15px;
     right: 10px;
     opacity: 0.5;
 }
-.password_icon.on{
+
+.password_icon.on {
     opacity: 1;
 }
-.login_wrap input[type="submit"]{
+
+.login_wrap input[type="submit"] {
     background-color: var(--color-blue);
     color: var(--color-white);
     border-color: var(--color-blue);
     cursor: pointer;
 }
-.left{
-    text-align: left;
+
+.left {
+    display: flex;
     margin-bottom: 40px;
+    justify-content: space-between;
 }
-.login_wrap input[type="checkbox"]{
+
+.login_wrap input[type="checkbox"] {
     display: none;
 }
-.left label::before{
+
+.left label::before {
     content: '';
     display: inline-block;
     width: 18px;
@@ -62,46 +73,53 @@ h2{
     vertical-align: text-bottom;
     box-sizing: border-box;
 }
-.left input:checked+label::before{
+
+.left input:checked+label::before {
     background: var(--color-blue) url(../images/check.png) no-repeat center center;
     border-color: var(--color-blue);
 }
 
-.account_more{
+.left a:hover {
+    color: var(--color-blue);
+}
+
+.account_more {
     margin: 10px 0 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.login_more{
+.login_more {
     background-color: var(--color-light-gray);
     padding: 10px;
-    color: var(--color-mid-gray);
 }
-.login_more a{
+
+.login_more a {
     display: inline-block;
     margin: 0 5px;
+    text-decoration: underline;
 }
-.login_more a:hover{
+
+.login_more a:hover {
     color: var(--color-blue);
 }
 
 /* moblie */
-@media (max-width:930px){
-    .contents{
+@media (max-width:930px) {
+    .contents {
         width: 90%;
     }
 }
 
-@media (max-width:620px){
-    .login_wrap{
+@media (max-width:620px) {
+    .login_wrap {
         width: 90%;
     }
 }
 
-@media (max-width:430px){
-    h2{
+@media (max-width:430px) {
+    h2 {
         font-size: var(--size-h5);
     }
 }
