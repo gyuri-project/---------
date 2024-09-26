@@ -8,22 +8,27 @@
   margin-bottom: 30px;
 }
 
-h2 {
-  line-height: 1;
+.title{
+  display: flex;
+  align-items: flex-end;
   padding-bottom: 10px;
-  text-align: left;
 }
 
-h2 span {
+h2 {
+  line-height: 1;
+}
+
+.title p {
   font-size: var(--size-16);
-  font-weight: 400;
+  font-weight: 300;
   font-family: var(--font-noto);
   vertical-align: bottom;
   line-height: 1.7;
+  padding: 0 5px 0 10px;
 }
 
-h2 span img {
-  vertical-align: top;
+.title img {
+  padding-bottom: 3px;
 }
 
 .cafe_search_box form {
@@ -190,8 +195,20 @@ h2 span img {
 }
 
 @media (max-width: 999px) {
-  h2 {
+  .title{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  h2{
+    width: 100%;
     text-align: center;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+
+  .title p{
+    padding-left: 0;
   }
 
   .cafe_search_box form {
@@ -215,6 +232,14 @@ h2 span img {
     font-size: var(--size-h5);
   }
 
+  .title p{
+    font-size: var(--size-14);
+  }
+
+  .title img{
+    width: 20px;
+  }
+
   .list_box {
     display: block;
   }
@@ -225,12 +250,17 @@ h2 span img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .cafe_search_box {
     padding: 5% 3%;
   }
 
   h2 {
     font-size: var(--size-h6);
+  }
+
+  .cafe_search_box input[type="search"], .cafe_search_box input[type="submit"], .cafe_search_box select{
+    font-size: var(--size-14);
+    padding: 2%;
   }
 }
