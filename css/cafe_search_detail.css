@@ -66,6 +66,11 @@ h6 {
    align-items: center;
 }
 
+.popup div img{
+    display: block;
+    max-width: 800px;
+}
+
 
 /* 아이콘 */
 .icon {
