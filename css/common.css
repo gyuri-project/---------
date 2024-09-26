@@ -219,7 +219,8 @@ nav {
     transition: 0.5s;
 }
 
-.nav a:hover::before {
+.nav a:hover::before,
+.nav a.active::before {
     transform: scaleX(1);
 }
 
