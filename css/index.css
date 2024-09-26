@@ -5,9 +5,10 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 25vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 .index_wrap .logo {
@@ -33,7 +34,6 @@
 }
 
 /* title */
-
 h5 {
   padding: 30px 0 10px;
 }
