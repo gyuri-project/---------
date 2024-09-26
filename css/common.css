@@ -45,6 +45,7 @@ textarea {
     font-family: var(--font-noto);
     font-size: var(--size-16);
     color: var(--color-black);
+    background-color: var(--color-white);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
