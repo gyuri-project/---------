@@ -43,6 +43,10 @@ h2 span img {
   padding: 11px 10px;
 }
 
+.cafe_search_box input::placeholder{
+  color: var(--color-black);
+}
+
 .cafe_search_box select {
   width: 24%;
 }

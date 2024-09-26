@@ -34,6 +34,9 @@ $(function(){
     $('.swiper-slide:nth-child(1)').click(function(){
         $('.pop1').show();
     });
+    $('.swiper-slide:nth-child(2)').click(function(){
+        $('.pop2').show();
+    });
 
     $('.popup i').click(function(){
         $('.popup').hide();

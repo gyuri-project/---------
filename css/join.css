@@ -24,9 +24,6 @@ h2{
     box-sizing: border-box;
     color: var(--color-black);
 }
-.contents input::placeholder{
-    color: var(--color-mid-gray);
-}
 .contents label{
     display: block;
     margin-bottom: 3px;

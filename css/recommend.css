@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+.contents {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 프로필 */
+.profile {
+  padding-top: 50px;
+  width: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.user_box i {
+  font-size: var(--size-h1);
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blue);
+  margin-right: 10px;
+}
+
+.user_box a {
+  display: none;
+  font-size: var(--size-16);
+}
+
+.sub_menu {
+  padding-top: 30px;
+}
+
+.sub_menu li {
+  font-size: var(--size-16);
+  padding-bottom: 3px;
+}
+
+.sub_menu li:nth-child(1) {
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: 800;
+}
+
+.sub_menu li a:hover {
+  color: var(--color-blue);
+}
+
+/* 카페 추천하기 */
+.recommend {
+  font-size: var(--size-16);
+  width: 80%;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+.contents input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-mid-gray);
+  padding: 10px;
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+
+.contents input[type="text"] {
+  width: 50%;
+}
+
+.contents label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: var(--size-h5);
+  font-weight: bold;
+}
+
+.contents label[for="checkAll"] {
+  font-size: var(--size-16);
+  font-weight: normal;
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.photo li {
+  width: 24%;
+  height: 18vw;
+  max-height: 255px;
+}
+
+.photo li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-mid-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo li a::after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url(../images/icon_plus.png);
+}
+
+.left {
+  margin-bottom: 30px;
+}
+
+.left input {
+  display: none;
+}
+
+.left label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--color-mid-gray);
+  box-sizing: border-box;
+  vertical-align: text-bottom;
+  margin-right: 8px;
+}
+
+.left input:checked+label::before {
+  background: url(../images/check.png) no-repeat 50% 50% var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 50px;
+  border: 1px solid var(--color-mid-gray);
+}
+
+.contents input[type="email"] {
+  width: 60%;
+}
+
+.contents input[type="submit"] {
+  background-color: var(--color-blue);
+  border: none;
+  font-size: var(--size-h5);
+  font-weight: 500;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 15px 0;
+  margin: 50px 0 30px;
+}
+
+/* 미디어 쿼리 */
+
+@media (max-width: 999px) {
+  .contents {
+    display: block;
+  }
+
+  .profile {
+    padding: 0;
+    position: static;
+    width: 100%;
+    position: relative;
+  }
+
+  .user_box {
+    display: flex;
+  }
+
+  h5 {
+    padding-top: 10px;
+  }
+
+  .profile ul {
+    padding: 0;
+  }
+
+  .profile ul:nth-of-type(1) {
+    display: none;
+  }
+
+  .profile ul:nth-of-type(2) {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    gap: 15px;
+  }
+
+  .profile ul:nth-of-type(2) li:nth-child(1) {
+    display: none;
+  }
+
+  .profile ul:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    left: 280px;
+  }
+
+  .profile ul li,
+  .profile ul li:nth-child(1) {
+    font-size: var(--size-16);
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .user_box a {
+    display: inline-block;
+  }
+
+  .recommend {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .photo li {
+    height: 22vw;
+  }
+
+  .contents input[type="email"]{
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  h2 {
+    font-size: var(--size-h5);
+  }
+
+  .contents label {
+    font-size: var(--size-h6);
+  }
+
+  form p {
+    font-size: var(--size-14);
+  }
+}
+
+@media (max-width: 400px) {
+  .user_box i {
+    font-size: var(--size-h2);
+    width: 60px;
+    height: 60px;
+  }
+
+  h5 {
+    font-size: var(--size-h6);
+    padding-top: 5px;
+  }
+
+  .profile ul:nth-of-type(2) {
+    left: 70px;
+  }
+
+  .profile ul:nth-of-type(3) {
+    left: 240px;
+  }
+
+  .profile ul li,
+  .profile ul li:nth-child(1) {
+    padding-bottom: 0;
+    font-size: var(--size-14);
+  }
+}
+
+@media (max-width: 335px) {
+  .profile ul:nth-of-type(3) {
+    bottom: -30px;
+    left: 70px;
+  }
+}
+
+/* 미디어 쿼리 끝 */

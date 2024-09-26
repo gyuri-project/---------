@@ -27,10 +27,6 @@ h2 {
     color: var(--color-black);
 }
 
-.login_wrap input::placeholder {
-    color: var(--color-mid-gray);
-}
-
 .password_box {
     position: relative;
 }
