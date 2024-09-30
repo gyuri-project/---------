@@ -102,13 +102,6 @@ h1 {
   margin-bottom: 100px;
 }
 
-.list .img_box {
-  overflow: hidden;
-  aspect-ratio: 3/2;
-  border: none;
-  border-radius: 20px;
-}
-
 .list img {
   width: 100%;
 }
